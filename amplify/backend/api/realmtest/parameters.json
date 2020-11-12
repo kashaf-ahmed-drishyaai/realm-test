@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "realmtest",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authrealmtest70235cef",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "appName": "realmtest",
+    "roleName": "pinpointLambdaRole9f10854b",
+    "cloudformationPolicyName": "cloudformationPolicy9f10854b",
+    "cloudWatchPolicyName": "cloudWatchPolicy9f10854b",
+    "pinpointPolicyName": "pinpointPolicy9f10854b",
+    "authPolicyName": "pinpoint_amplify_9f10854b",
+    "unauthPolicyName": "pinpoint_amplify_9f10854b",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
